@@ -26,7 +26,6 @@ Testing Load Balance Apps on Openshift
 
 *** TESTING 50:50 
 >while true; do curl -s http://ab-load-balance.smartfintech.i3-cloud.com/item.php | grep "data/images" | awk '{print $5}' ; sleep 1; done | cut -d '/' -f3
-
 cities
 cats
 cities
