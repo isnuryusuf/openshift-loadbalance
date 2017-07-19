@@ -9,12 +9,12 @@ Testing Load Balance Apps on Openshift
 
 
 *** CREATE APP1 called, load-balance1
->oc new-app --name='load-balance1' -l name='load-balance' php~https://github.com/StefanoPicozzi/load-balance.git -e SELECTOR=cats
+>oc new-app --name='load-balance1' -l name='load-balance' php~https://github.com/isnuryusuf/cotd.git -e SELECTOR=cats
 >oc expose service load-balance1 --name=load-balance1 -l name='load-balance'
 
 
 *** CREATE APP2, called load-balance2
->oc new-app --name='load-balance2' -l name='load-balance' php~https://github.com/StefanoPicozzi/load-balance.git -e SELECTOR=cities
+>oc new-app --name='load-balance2' -l name='load-balance' php~https://github.com/isnuryusuf/cotd.git -e SELECTOR=cities
 >oc expose service load-balance2 --name=load-balance2 -l name='load-balance'
 
 
