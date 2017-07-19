@@ -3,9 +3,9 @@ Testing Load Balance Apps on Openshift
 
 ## Installing OpenShift, Please Refer to: https://github.com/isnuryusuf/openshift-install/blob/master/openshift-origin-quickstart.md
 
-
+`
 ####### CREATE PROJECT #########
-`oc new-project load-balance --display-name='Cat and City' --description='Load Balance Example'`
+oc new-project load-balance --display-name='Cat and City' --description='Load Balance Example'
 
 
 ####### CREATE APP1 called, load-balance1 #########
@@ -33,4 +33,4 @@ cities
 cats
 cities
 cats
-cities
+cities`
